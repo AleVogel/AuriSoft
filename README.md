@@ -1,3 +1,6 @@
+![Logo AuriSoft](./public/images/Logo-aurisoft.png)
+
+
 # AuriSoft- Sitio Web
 
 Este repositorio aloja el sitio web de AuriSoft, una compañía especializada en el desarrollo de soluciones tecnológicas innovadoras.
