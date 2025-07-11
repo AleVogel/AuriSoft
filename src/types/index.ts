@@ -4,6 +4,7 @@ export interface ServiceItem {
   description: string;
   imageUrl: string;
   reverse?: boolean;
+  webpUrl?: string;
 }
 
 export interface ProjectItem {

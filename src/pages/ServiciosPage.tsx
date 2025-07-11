@@ -1,29 +1,29 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ServiceItem } from '../types';
-import ellipse1 from '../assets/consultorias-aurosift.png';
-import ellipse2 from '../assets/endtoend-aurisoft.png';
-import ellipse3 from '../assets/mejora-aurisoft.png';
+
+// Importamos ÚNICAMENTE las imágenes .webp
+import ellipse1 from '../assets/consultorias-aurosift.webp';
+import ellipse2 from '../assets/endtoend-aurisoft.webp';
+import ellipse3 from '../assets/mejora-aurisoft.webp';
+
 import '../styles/ServiciosPage.css';
 
 function ServiciosPage() {
   const services: ServiceItem[] = [
     {
       title: 'CONSULTORÍAS',
-      description:
-        'Te acompañamos en la transformación digital de tu negocio. Analizamos tu situación, detectamos oportunidades y diseñamos soluciones tecnológicas a medida para optimizar procesos, potenciar tu presencia online y alcanzar tus objetivos con precisión.',
-      imageUrl: ellipse1,
+      description: 'Te acompañamos en la transformación digital de tu negocio. Analizamos tu situación, detectamos oportunidades y diseñamos soluciones tecnológicas a medida para optimizar procesos, potenciar tu presencia online y alcanzar tus objetivos con precisión.',
+      imageUrl: ellipse1, // La propiedad ahora contiene la ruta al .webp
     },
     {
       title: 'DESARROLLO END TO END',
-      description:
-        'Desarrollamos soluciones digitales a medida, desde la idea inicial hasta su implementación. Trabajamos con metodologías ágiles para crear sitios web y plataformas responsivas, combinando tecnología moderna con diseño centrado en el usuario, garantizando productos robustos y escalables.',
+      description: 'Desarrollamos soluciones digitales a medida, desde la idea inicial hasta su implementación. Trabajamos con metodologías ágiles para crear sitios web y plataformas responsivas, combinando tecnología moderna con diseño centrado en el usuario, garantizando productos robustos y escalables.',
       imageUrl: ellipse2,
     },
     {
       title: 'MEJORA CONTINUA',
-      description:
-        'Brindamos mantenimiento continuo para tus plataformas digitales, con monitoreo proactivo, actualizaciones de seguridad y mejoras constantes. Nuestros planes de soporte técnico aseguran rendimiento óptimo y adaptación a nuevas tecnologías.',
+      description: 'Brindamos mantenimiento continuo para tus plataformas digitales, con monitoreo proactivo, actualizaciones de seguridad y mejoras constantes. Nuestros planes de soporte técnico aseguran rendimiento óptimo y adaptación a nuevas tecnologías.',
       imageUrl: ellipse3,
     },
   ];
@@ -56,6 +56,7 @@ function ServiciosPage() {
               <div className="servicio-item text-center text-white w-100">
                 <div className="gradient-border mx-auto mb-3" style={{ width: '12rem', height: '12rem' }}>
                   <div className="w-100 h-100 rounded-circle overflow-hidden">
+                    {/* Usamos un <img> simple, ya no necesitamos <picture> */}
                     <img
                       src={service.imageUrl}
                       alt={service.title}

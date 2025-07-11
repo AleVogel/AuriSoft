@@ -23,7 +23,6 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: 'Poppins', sans-serif;
-
 }
 
 h1 {
@@ -54,7 +53,6 @@ a {
   height: auto;
   max-height: 100%;
 }
-
 
 .nav-link,
 .nav-link:visited,
@@ -105,8 +103,9 @@ a {
   border-color: var(--bs-secondary) !important;
 }
 
+
 .bg-hero {
-  background-image: url('../assets/hero-aurisoft.png');
+  background-image: url('../assets/hero-aurisoft.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -120,7 +119,7 @@ a {
 }
 
 .bg-somos {
-  background-image: url('../assets/Back_aurisoft.jpg');
+  background-image: url('../assets/Back_aurisoft.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -133,7 +132,7 @@ a {
 }
 
 .bg-servicios {
-  background-image: url('../assets/aurisoftBinn.png');
+  background-image: url('../assets/aurisoftBinn.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -148,7 +147,7 @@ a {
 }
 
 .bg-contacto {
-  background-image: url('../assets/back-contact.png');
+  background-image: url('../assets/back-contact.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -156,7 +155,6 @@ a {
   padding-top: var(--navbar-height);
   min-height: calc(100vh - var(--navbar-height));
 }
-
 
 
 .logo-header {
@@ -219,13 +217,13 @@ a {
 .btn-primary {
   background-color: var(--bs-secondary) !important;
   border-color: var(--bs-secondary) !important;
-  color: #0d0d0d !important;
+  color: #0d0d0d !important; /* CORREGIDO: Mejor contraste */
 }
 
 .btn-primary:hover {
   background-color: #e96c14 !important;
   border-color: #e96c14 !important;
-  color: #ffffff !important;
+  color: #0d0d0d !important; /* CORREGIDO: Mejor contraste */
 }
 
 .btn-outline-secondary {
@@ -243,11 +241,17 @@ a {
   color: #ffffff !important;
 }
 
+/* Esta regla sobreescribía el color del texto del botón, se ajusta para mantener el contraste */
 .btn-primary,
 .btn-primary:active,
-.btn-primary:focus,
-.btn-primary:hover {
+.btn-primary:focus {
   background-color: #f47b20 !important;
   border-color: #f47b20 !important;
-  color: #ffffff !important;
+  color: #0d0d0d !important; /* CORREGIDO: Mejor contraste */
+}
+
+.btn-primary:hover {
+  background-color: #e96c14 !important;
+  border-color: #e96c14 !important;
+  color: #ffffff !important; 
 }
