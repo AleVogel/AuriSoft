@@ -5,10 +5,17 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.css';
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
-); 
+// Busca el elemento 'root' en el documento
+const rootElement = document.getElementById('root');
+
+// Solo ejecuta el código de renderizado si el elemento 'root' existe
+// (esto evita que se ejecute en el servidor y cause el error)
+if (rootElement) {
+  ReactDOM.createRoot(rootElement as HTMLElement).render(
+    <React.StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </React.StrictMode>
+  );
+}

@@ -1,11 +1,13 @@
+// src/components/Logo.tsx
+
 import ImageOptimizer from './ImageOptimizer';
-import logoWebp from '/images/Logo-aurisoft.webp'; // Importa la imagen .webp
+import logoSrc from '/images/Logo-aurisoft.png'; // Importa la imagen directamente
 
 function Logo() {
   return (
     <div className="d-flex align-items-center">
       <ImageOptimizer
-        src={logoWebp} // Pasa la imagen importada
+        src={logoSrc} // Pasa la variable importada como 'src'
         alt="Aurisoft Logo"
         style={{
           height: '130px',
