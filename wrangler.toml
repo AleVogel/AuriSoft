@@ -1,0 +1,7 @@
+# wrangler.toml
+name = "aurisoft-web" # Puedes cambiar esto por el nombre que prefieras
+main = "src/_worker.js" # Punto de entrada de nuestro worker
+compatibility_date = "2024-07-10" # Fecha de hoy para la compatibilidad
+
+[site]
+bucket = "./dist" # Directorio con los archivos estáticos de tu web (generado por 'npm run build')
