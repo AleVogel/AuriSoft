@@ -84,7 +84,7 @@ a {
 }
 
 .bg-primary {
-  background-color: var(--bs-primary) !important;
+  background-color: #0d0d0d !important;
 }
 
 .bg-secondary {

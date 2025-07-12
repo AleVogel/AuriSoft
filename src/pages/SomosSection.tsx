@@ -47,12 +47,7 @@ function SomosSection() {
                 boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
               }}
             >
-              <img
-                src="/images/tech-code.svg"
-                alt="Tecnología y código"
-                className="position-absolute top-0 start-0 w-100 h-100"
-                style={{ objectFit: 'cover' }}
-              />
+             
             </div>
           </Col>
         </Row>
